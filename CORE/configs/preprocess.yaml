@@ -1,0 +1,14 @@
+PREPROCESS:
+  RAW_DIR: WESAD
+  ORIG_FS: 700
+  TARGET_FS: 70
+  WINDOW_SEC: 2.0
+  STEP_SEC: 1.0
+  LABEL_PURITY: 0.9
+  KEEP_LABELS: [1, 2, 3]
+  CHEST_CHANNELS: [ACC, ECG, EMG, EDA, Temp, Resp]
+DATA:
+  X_PATH: wesad_X_raw_70Hz.npy
+  Y_PATH: wesad_y_raw_labels.npy
+  S_PATH: wesad_s_raw_subjects.npy
+  CSV_PATH: 2.csv

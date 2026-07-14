@@ -1,0 +1,12 @@
+MODEL:
+  NAME: baseline_cnn
+  METHOD: baseline
+  BACKBONE: cnn
+  HEAD_HIDDEN: 128
+  HEAD_DROPOUT: 0.5
+DATA:
+  LOADER: wesad_raw
+TRAIN:
+  EPOCHS: 60
+  LR: 1.0e-3
+  MODEL_SELECTION: last

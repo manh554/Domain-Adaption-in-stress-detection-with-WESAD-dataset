@@ -1,0 +1,14 @@
+MODEL:
+  NAME: baseline_mlp
+  METHOD: baseline
+  BACKBONE: mlp
+  HEAD_HIDDEN: 0
+DATA:
+  LOADER: wesad_feature
+  CSV_PATH: 2.csv
+TRAIN:
+  EPOCHS: 60
+  LR: 1.0e-3
+  OPTIMIZER: adam
+  WEIGHT_DECAY: 0.0
+  MODEL_SELECTION: last
